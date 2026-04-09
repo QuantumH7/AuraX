@@ -1,103 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="../css/individual.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="/css/individual.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <h1 class="name">AB</h1>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<header>
+  <h2>Abera</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <img src="/image/Tom_Holland_during_pro-am_Wentworth_golf_club_2023-2_(cropped).jpg" alt="profile">
+  <p>Hello! I am passionate about software development and enjoy working with different programming languages. I like creating clean and simple projects that solve everyday problems. I am continuously learning and growing in my field</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="box">HTML</div>
+    <div class="box">CSS</div>
+    <div class="box">Java</div>
+    <div class="box">C++</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="box">
+      <h3>Library System</h3>
+      <p>Manage books and users.</p>
     </div>
-  </header>
+    <div class="box">
+      <h3>Student Manager</h3>
+      <p>Track student records.</p>
+    </div>
+  </div>
+</section>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container about-layout">
-        <div>
-          <h2>About Me</h2>
-          <p>
-            I am a passionate web development student who enjoys building clean,
-            responsive, and user-friendly websites. I love learning new technologies
-            and turning ideas into practical projects.
-          </p>
-        </div>
-        <img
-          src="../image/Tom_Holland_during_pro-am_Wentworth_golf_club_2023-2_(cropped).jpg"
-          alt="Profile"
-          class="profile-image"
-        >
-      </div>
-    </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Message"></textarea><br>
+    <button>Send</button>
+  </form>
+</section>
 
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-          <div class="skill-card">Java</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">Git</div>
-          <div class="skill-card">Responsive Design</div>
-        </div>
-      </div>
-    </section>
+<footer>
+  <p>© 2026 Abera. All rights reserved.</p>
+</footer>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>
-              A responsive portfolio website built using HTML and CSS to present
-              my profile, technical skills, and project work.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <h3>Student Registration Form</h3>
-            <p>
-              A structured and styled registration form focused on clean layout,
-              accessible labels, and simple validation-ready design.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p class="contact-text">Email: abel@example.com | Phone: +251 900 000 000</p>
-
-        <form class="contact-form" action="#" method="post">
-          <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Abel Birhanu. All rights reserved.</p>
-  </footer>
 </body>
 </html>
